@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.2em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    padding: 10px 20px;
+    background-color: #6495ED;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1em;
+    box-shadow: 1px 3px 11px -5px rgba(191, 127, 34, 1);
+}
+
+button:hover{
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0px;
+    transition: ease-in .5s;
+    cursor: pointer;
+    text-decoration: underline dashed #6495ED;
+}
+
+.topmenu{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header{
+    background-color: #2a2f54;
+    border-bottom: 1px solid #fff;   
+}
+
+
+
+/*----------- Menú de inicio (topmenu) -----------*/
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+.logo span {
+    color: #6495ED;
+}
+
+
+header .topmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+header a:hover{
+    text-decoration: underline;
+    background-color:aqua;
+    color:#000;
+    transition: ease-in .5s;
+    border-radius: 20px;
+}
+
+
+
+
+/*----------- Inicio (greetings) -----------*/
+
+#greetings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #2a2f54;
+    
+}
+
+#greetings h1{
+    color: white;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#greetings span{
+    color:#6495ED;
+}
+
+#greetings p{
+    color:#fff;
+    text-align: justify;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#greetings u{
+    color: #6495ED; 
+}
+
+#greetings button{
+    font-size: 1.75em;
+}
+
+
+
+/*----------- Conóceme (knowme) -----------*/
+
+#knowme .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
+/*----------- Portafolio (portafolio) -----------*/
+
+#portfolio {
+    background-color: #2a2f54;
+    color: white;
+    text-align: center;
+}
+
+#portfolio .container{
+    padding: 150px 12px;
+}
+
+#portfolio h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#portfolio p{
+    display: none;
+}
+
+#portfolio .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/project.png");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/programación.png");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/programación.png");
+
+}
+
+
+
+
+/*----------- Redes (redes sociales) -----------*/
+
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    height: 65vh;
+}
+
+#redes h2{
+    font-size: 1.5em;
+    margin: 10px 0 10px 0;
+}
+
+#redes h4{
+    margin: 10px 0 50px 0;
+}
+
+.social_content b{
+    color: #2a2f54;
+    width: auto;
+}
+
+.social_content b:hover{
+    color: red;
+    transition: ease-in .5s;
+}
+
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 170px;
+    margin-top: 1em;
+}
+
+.social-network i{
+    color: #2a2f54;
+    font-size: 3em;
+}
+
+.social-network i:hover{
+    color: red;
+    transition: ease-in .5s;
+}
+
+
+/*----------- Footer (copyright) -----------*/
+
+footer{
+    background-color: #2a2f54;
+}
+
+footer p{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer b:hover{
+    color: red;
+    transition: ease-in 1s;
+    text-transform: lowercase;
+    
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .secret{
+    color: rgba(16, 21, 75, 0.5);
+}
+
+footer .secret:hover{
+    color: #ffff00;
+    transition: ease-in 1s;
+}
+
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .topmenu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #greetings h1{
+        font-size: 3em;
+    }
+
+    #greetings a button {
+        margin: 15px 0 15px 0;
+    }
+
+    #knowme .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 12px;
+    }
+
+    #knowme .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #knowme h2{
+        margin-top: 0px;
+    }
+
+    #knowme .img-container{
+        background-image: url("media/perfil.png"); /*media/perfil.png*/
+        background-color: #fff;
+        background-position: center center;
+        width: 500px;
+        height: 400px; 
+    }
+
+    #portfolio .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #portfolio p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #portfolio h2{
+        font-size: 4em;
+    }
+
+    #portfolio h3{
+        margin-top: 0;
+    }
+
+    #portfolio .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/project.png");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/programación.png");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/programación.png");
+
+    }
+
+    #redes h2{
+        font-size: 1.5em;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
