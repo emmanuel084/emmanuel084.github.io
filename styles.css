@@ -131,7 +131,7 @@ header a:hover{
     color: #6495ED; 
 }
 
-#greetings button{
+#greetings .btn-cv{
     font-size: 1.75em;
 }
 
@@ -144,15 +144,15 @@ header a:hover{
     padding: 200px 12px;
 }
 
-.logodos::before{
+/*.logodos::before{
     content: "";
     height: 3px;
     width: 45px;
     background: #FF6F13;
     position: absolute;
-    bottom: -105px;
+    bottom: -95px;
     z-index: -1;
-}
+}*/
 
 
 /*----------- Portafolio (portafolio) -----------*/
@@ -251,7 +251,6 @@ header a:hover{
 .social-network{
     display: flex;
     justify-content: space-evenly;
-    width: 170px;
     margin-top: 1em;
 }
 
@@ -264,6 +263,27 @@ header a:hover{
     color: red;
     transition: ease-in .5s;
 }
+
+.fa-github{
+    width: 280px;height: 10px;padding-left: 16px;
+}
+
+
+
+/*----------- Scroll Top (Subir) -----------*/
+
+
+.btn-scroll-top{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.5%;
+    margin-left: 1%;
+}
+
+
 
 
 /*----------- Footer (copyright) -----------*/
@@ -322,14 +342,25 @@ footer .secret:hover{
         font-size: 3em;
     }
 
-    #greetings a button {
+    .btn-cv{
         margin: 15px 0 15px 0;
+        margin-top: 15% !important;
     }
 
     #knowme .container{
         display: flex;
         justify-content: space-evenly;
         padding: 100px 12px;
+    }
+
+    .logodos::before{
+        content: "";
+        height: 3px;
+        width: 45px;
+        background: #FF6F13;
+        position: absolute;
+        bottom: -95px;
+        z-index: -1;
     }
 
     #knowme .texto{
@@ -414,8 +445,20 @@ footer .secret:hover{
         font-size: 1.5em;
     }
 
+
     footer .container{
         justify-content: center;
     }
 }
 
+@media (min-width: 450px){
+
+    .btn-scroll-top{
+        margin-left: 1.5%;
+        margin-bottom: 1%;
+    }
+
+    #greetings .btn-cv{
+        margin-top: 1%;
+    }
+}
