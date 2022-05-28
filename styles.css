@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #000;
+    --second-color: #fff;
+    --third-color: #FF6F13;
+    --forth-color: #2a2f54;
+    
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -26,7 +34,7 @@ button{
     border: none;
     border-radius: 20px;
     margin-top: 1em;
-    box-shadow: 1px 3px 11px -5px rgba(191, 127, 34, 1);
+    box-shadow: 1px 3px 11px -5px var(--third-color);
 }
 
 button:hover{
@@ -38,6 +46,34 @@ button:hover{
     text-decoration: underline dashed #6495ED;
 }
 
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: #FF6F13; 
+    margin-top: 10px;
+    margin-bottom: 0.5em;   
+}
+
+.uno{
+    margin-top: 2px !important;
+}
+
+
+/*----------- Modo Oscuro (darkmode) -----------*/
+
+
+
+.dark-theme{
+    --primary-color:#fff;
+    --second-color:#000;
+    --third-color: #FF6F13; 
+    --forth-color: #000;   
+}
+
+
+
+/*----------- Menú de inicio (topmenu) -----------*/
+
 .topmenu{
     max-width: 1400px;
     margin: auto;
@@ -45,13 +81,9 @@ button:hover{
 
 
 header{
-    background-color: #2a2f54;
+    background-color: var(--forth-color);
     border-bottom: 1px solid #fff;   
 }
-
-
-
-/*----------- Menú de inicio (topmenu) -----------*/
 
 header .logo{
     margin: 0;
@@ -95,6 +127,13 @@ header a:hover{
 }
 
 
+#darkmode{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
 
 
 /*----------- Inicio (greetings) -----------*/
@@ -106,7 +145,8 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-color: #2a2f54;
+    background-color: var(--forth-color);
+    border-bottom: 1px solid #fff; 
     
 }
 
@@ -139,28 +179,31 @@ header a:hover{
 
 /*----------- Conóceme (knowme) -----------*/
 
+#knowme{
+    border-bottom: 1px solid #fff; 
+}
+
 #knowme .container{
     text-align: center;
     padding: 200px 12px;
+    background-color: var(--second-color);
+    color: var(--primary-color);
 }
 
-/*.logodos::before{
-    content: "";
-    height: 3px;
-    width: 45px;
-    background: #FF6F13;
-    position: absolute;
-    bottom: -95px;
-    z-index: -1;
-}*/
+.dos u{
+    color: var(--third-color);
+    
+}
+
 
 
 /*----------- Portafolio (portafolio) -----------*/
 
 #portfolio {
-    background-color: #2a2f54;
+    background-color: var(--forth-color);
     color: white;
     text-align: center;
+    border-bottom: 1px solid #fff; 
 }
 
 #portfolio .container{
@@ -224,9 +267,10 @@ header a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--second-color);
+    color: var(--primary-color);
     height: 65vh;
+    border-bottom: 1px solid #fff; 
 }
 
 #redes h2{
@@ -289,7 +333,7 @@ header a:hover{
 /*----------- Footer (copyright) -----------*/
 
 footer{
-    background-color: #2a2f54;
+    background-color: var(--forth-color);
 }
 
 footer p{
@@ -353,16 +397,6 @@ footer .secret:hover{
         padding: 100px 12px;
     }
 
-    .logodos::before{
-        content: "";
-        height: 3px;
-        width: 45px;
-        background: #FF6F13;
-        position: absolute;
-        bottom: -95px;
-        z-index: -1;
-    }
-
     #knowme .texto{
         width: 50%;
         max-width: 600px;
@@ -375,6 +409,7 @@ footer .secret:hover{
 
     #knowme h2{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     #knowme .img-container{
@@ -445,6 +480,14 @@ footer .secret:hover{
         font-size: 1.5em;
     }
 
+    #redes h1{        
+        margin-bottom: 0px;
+    }
+
+    .tres{
+        margin-top: 0px;
+    }
+
 
     footer .container{
         justify-content: center;
@@ -461,4 +504,18 @@ footer .secret:hover{
     #greetings .btn-cv{
         margin-top: 1%;
     }
+
+    #darkmode{
+        margin-bottom: 10px;
+    }
+
+
+    #redes h1{        
+        margin-bottom: 0px;
+    }
+
+    .tres{
+        margin-top: 0px;
+    }
+    
 }
