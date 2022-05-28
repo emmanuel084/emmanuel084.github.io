@@ -413,8 +413,8 @@ footer .secret:hover{
     }
 
     #knowme .img-container{
-        background-image: url("media/perfil.png"); /*media/perfil.png*/
-        background-color: #fff;
+        background-image: url("media/perfil.png"); 
+        background-color: var(--second-color);
         background-position: center center;
         width: 500px;
         height: 400px; 
